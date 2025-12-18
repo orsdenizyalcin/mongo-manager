@@ -82,7 +82,7 @@ docker-compose up -d
 ## Project Structure
 
 ```
-mongomanager/
+mongo-manager-main/
 ├── backend/
 │   ├── src/
 │   │   ├── config/         # Auth & configuration
