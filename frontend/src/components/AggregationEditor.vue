@@ -382,7 +382,7 @@
 		</div>
 
 		<!-- Explain Plan Modal -->
-		<div v-if="showExplainModal" class="modal-overlay" @click.self="showExplainModal = false">
+		<div v-if="showExplainModal" class="modal-overlay" >
 			<div class="explain-modal">
 				<div class="modal-header">
 					<h2>{{ t('explainPlan') }}</h2>
@@ -457,7 +457,7 @@
 		</div>
 
 		<!-- Save/Load Pipeline Modals -->
-		<div v-if="showSaveModal" class="modal-overlay" @click.self="showSaveModal = false">
+		<div v-if="showSaveModal" class="modal-overlay" >
 			<div class="modal-content">
 				<h3>{{ t('savePipeline') }}</h3>
 				<form @submit.prevent="savePipeline">
@@ -477,7 +477,7 @@
 			</div>
 		</div>
 
-		<div v-if="showLoadModal" class="modal-overlay" @click.self="showLoadModal = false">
+		<div v-if="showLoadModal" class="modal-overlay" >
 			<div class="modal-content">
 				<h3>{{ t('loadPipeline') }}</h3>
 				<div v-if="loadingPipelines" class="loading">{{ t('loading') }}</div>
@@ -498,7 +498,7 @@
 		</div>
 
 		<!-- Export to Language Modal -->
-		<div v-if="showExportModal" class="modal-overlay" @click.self="showExportModal = false">
+		<div v-if="showExportModal" class="modal-overlay" >
 			<div class="export-modal">
 				<div class="modal-header">
 					<h2>{{ t('exportPipelineToLanguage') }}</h2>
@@ -529,7 +529,7 @@
 		</div>
 
 		<!-- Focus Mode Modal -->
-		<div v-if="focusModeIndex !== null" class="modal-overlay focus-mode-overlay" @click.self="closeFocusMode">
+		<div v-if="focusModeIndex !== null" class="modal-overlay focus-mode-overlay" >
 			<div class="focus-mode-modal">
 				<div class="focus-modal-header">
 					<div class="focus-header-left">

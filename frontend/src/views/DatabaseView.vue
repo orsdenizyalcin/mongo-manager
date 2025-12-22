@@ -181,7 +181,7 @@
 		</div>
 
 		<!-- Create Collection Modal -->
-		<div v-if="showCreateCollModal" class="modal-overlay" @click.self="showCreateCollModal = false">
+		<div v-if="showCreateCollModal" class="modal-overlay" >
 			<div class="mongomanager-modal">
 				<div class="modal-title">{{ $t('createCollection') }}</div>
 				<form @submit.prevent="createCollection">

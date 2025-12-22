@@ -190,7 +190,7 @@
 			</div>
 
 			<!-- Connection Modal -->
-			<div v-if="showConnectionModal" class="modal-overlay" @click.self="!connectionSaving && (showConnectionModal = false)">
+			<div v-if="showConnectionModal" class="modal-overlay" >
 				<div class="modal mongomanager-modal">
 					<div class="modal-title">{{ $t('newConnection') }}</div>
 					<div class="modal-body">
@@ -255,7 +255,7 @@
 			</div>
 
 			<!-- Edit Connection Modal -->
-			<div v-if="showEditConnectionModal" class="modal-overlay" @click.self="showEditConnectionModal = false">
+			<div v-if="showEditConnectionModal" class="modal-overlay" >
 				<div class="modal mongomanager-modal">
 					<div class="modal-title">{{ $t('editConnection') }}</div>
 					<form @submit.prevent="updateConnection">
@@ -305,7 +305,7 @@
 			</div>
 
 			<!-- Create Database Modal -->
-			<div v-if="showCreateDbModal" class="modal-overlay" @click.self="closeCreateDbModal">
+			<div v-if="showCreateDbModal" class="modal-overlay" >
 				<div class="modal mongomanager-modal" style="width: 450px">
 					<div class="modal-title">{{ $t('createDatabase') }}</div>
 

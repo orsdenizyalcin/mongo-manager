@@ -81,7 +81,7 @@
 		</div>
 
 		<!-- Add/Edit Modal -->
-		<div v-if="showModal" class="modal-overlay" @click.self="closeModal">
+		<div v-if="showModal" class="modal-overlay" >
 			<div class="modal-content">
 				<div class="modal-header">
 					<h3>{{ editingConnection ? 'Edit Connection' : 'New Connection' }}</h3>
@@ -149,7 +149,7 @@
 		</div>
 
 		<!-- Confirm Delete Modal -->
-		<div v-if="showDeleteModal" class="modal-overlay" @click.self="showDeleteModal = false">
+		<div v-if="showDeleteModal" class="modal-overlay" >
 			<div class="modal-content" style="max-width: 400px">
 				<div class="modal-header">
 					<h3>Delete Connection</h3>

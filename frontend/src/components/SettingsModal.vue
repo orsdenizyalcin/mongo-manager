@@ -1,5 +1,5 @@
 <template>
-	<div class="modal-overlay" @click.self="$emit('close')">
+	<div class="modal-overlay" >
 		<div class="settings-modal">
 			<div class="modal-header">
 				<h3>{{ $t('settings') }}</h3>

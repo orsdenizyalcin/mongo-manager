@@ -1,5 +1,5 @@
 <template>
-	<div v-if="visible" class="modal-overlay" @click.self="close">
+	<div v-if="visible" class="modal-overlay" >
 		<div class="modal-content document-editor">
 			<div class="editor-header">
 				<div class="header-title">

@@ -259,7 +259,7 @@
 		</div>
 
 		<!-- Insert Modal -->
-		<div v-if="showInsertModal" class="modal-overlay" @click.self="showInsertModal = false">
+		<div v-if="showInsertModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 750px">
 				<div class="modal-title">{{ $t('insertDocumentInto') }} {{ collection }}</div>
 				<form @submit.prevent="insertDoc">
@@ -276,7 +276,7 @@
 		</div>
 
 		<!-- Edit/Update Modal -->
-		<div v-if="showEditModal" class="modal-overlay" @click.self="showEditModal = false">
+		<div v-if="showEditModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 750px">
 				<div class="modal-title">{{ $t('updateDocument') }}</div>
 				<form @submit.prevent="updateDoc">
@@ -293,7 +293,7 @@
 		</div>
 
 		<!-- Multi Update Modal (Filter-based) -->
-		<div v-if="showMultiUpdateModal" class="modal-overlay" @click.self="showMultiUpdateModal = false">
+		<div v-if="showMultiUpdateModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 700px">
 				<div class="modal-title">{{ $t('updateAllMatchingDocs') }} ({{ totalDocs }})</div>
 				<form @submit.prevent="multiUpdateByFilter">
@@ -313,7 +313,7 @@
 		</div>
 
 		<!-- Multi Delete Modal (Filter-based) -->
-		<div v-if="showMultiDeleteModal" class="modal-overlay" @click.self="showMultiDeleteModal = false">
+		<div v-if="showMultiDeleteModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 500px">
 				<div class="modal-title">{{ $t('deleteAllMatchingDocs') }}</div>
 				<div style="padding: 15px">
@@ -342,7 +342,7 @@
 		</div>
 
 		<!-- Update Selected Documents Modal -->
-		<div v-if="showSelectedUpdateModal" class="modal-overlay" @click.self="showSelectedUpdateModal = false">
+		<div v-if="showSelectedUpdateModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 700px">
 				<div class="modal-title">{{ $t('updateSelectedDocs') }} ({{ selectedDocs.length }})</div>
 				<form @submit.prevent="executeSelectedUpdate">
@@ -359,7 +359,7 @@
 		</div>
 
 		<!-- New Field Modal -->
-		<div v-if="showNewFieldModal" class="modal-overlay" @click.self="showNewFieldModal = false">
+		<div v-if="showNewFieldModal" class="modal-overlay" >
 			<div class="mongomanager-modal modal-form" style="width: 420px">
 				<div class="modal-title">{{ $t('addNewFieldToAll') }}</div>
 				<form @submit.prevent="addNewField">
@@ -393,7 +393,7 @@
 		</div>
 
 		<!-- Rename Modal -->
-		<div v-if="showRenameModal" class="modal-overlay" @click.self="showRenameModal = false">
+		<div v-if="showRenameModal" class="modal-overlay" >
 			<div class="mongomanager-modal modal-form" style="width: 400px">
 				<div class="modal-title">{{ $t('renameCollection') }}</div>
 				<form @submit.prevent="renameCollection">
@@ -416,7 +416,7 @@
 		</div>
 
 		<!-- Export Modal -->
-		<div v-if="showExportModal" class="modal-overlay" @click.self="showExportModal = false">
+		<div v-if="showExportModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 500px">
 				<div class="modal-title">{{ $t('exportCollection') }}: {{ collection }}</div>
 				<div style="padding: 15px">
@@ -446,7 +446,7 @@
 		</div>
 
 		<!-- Import Modal -->
-		<div v-if="showImportModal" class="modal-overlay" @click.self="showImportModal = false">
+		<div v-if="showImportModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 550px">
 				<div class="modal-title">{{ $t('importCollection') }}: {{ collection }}</div>
 				<div style="padding: 15px">
@@ -491,7 +491,7 @@
 		</div>
 
 		<!-- Properties Modal -->
-		<div v-if="showPropertiesModal" class="modal-overlay" @click.self="showPropertiesModal = false">
+		<div v-if="showPropertiesModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 500px">
 				<div class="modal-title">{{ $t('properties') }}: {{ collection }}</div>
 				<div style="padding: 15px">
@@ -533,7 +533,7 @@
 		</div>
 
 		<!-- Transfer Modal -->
-		<div v-if="showTransferModal" class="modal-overlay" @click.self="showTransferModal = false">
+		<div v-if="showTransferModal" class="modal-overlay" >
 			<div class="mongomanager-modal modal-form" style="width: 420px">
 				<div class="modal-title">{{ $t('transfer') }}: {{ collection }}</div>
 				<form @submit.prevent="transferCollection">
@@ -565,7 +565,7 @@
 		</div>
 
 		<!-- Create Index Modal -->
-		<div v-if="showCreateIndexModal" class="modal-overlay" @click.self="showCreateIndexModal = false">
+		<div v-if="showCreateIndexModal" class="modal-overlay" >
 			<div class="mongomanager-modal modal-form" style="width: 500px">
 				<div class="modal-title">{{ $t('createIndex') }}: {{ collection }}</div>
 				<form @submit.prevent="createIndex">
@@ -651,7 +651,7 @@
 		</div>
 
 		<!-- History Modal -->
-		<div v-if="showHistory" class="modal-overlay" @click.self="showHistory = false">
+		<div v-if="showHistory" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 600px">
 				<div class="modal-title">{{ $t('queryHistory') }}</div>
 				<div style="padding: 15px; max-height: 400px; overflow-y: auto">
@@ -669,7 +669,7 @@
 		</div>
 
 		<!-- Explain Modal -->
-		<div v-if="showExplainModal" class="modal-overlay" @click.self="showExplainModal = false">
+		<div v-if="showExplainModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 700px">
 				<div class="modal-title">{{ $t('queryExplain') }}</div>
 				<div style="padding: 15px; max-height: 500px; overflow-y: auto">

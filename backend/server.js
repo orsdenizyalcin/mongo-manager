@@ -4,15 +4,16 @@ import config from './src/config/index.js';
 
 const app = createApp();
 const port = config.port;
+const serverIP = config.serverIP;
 
-app.listen(port, () => {
+app.listen(port, serverIP, () => {
   console.log(`
 ╔════════════════════════════════════════════════════════════════╗
 ║                    Mongo Manager Backend                       ║
 ╠════════════════════════════════════════════════════════════════╣
-║  Server running at: http://localhost:${port.toString().padEnd(26)}║
+║  Server running at: http://${serverIP}:${port.toString().padEnd(26)}║
 ║  Environment: ${(process.env.NODE_ENV || 'development').padEnd(46)}║
-║  API endpoint: http://localhost:${port}/api                      ║
+║  API endpoint: http://${serverIP}:${port}/api                      ║
 ╚════════════════════════════════════════════════════════════════╝
   `);
 });

@@ -1,7 +1,7 @@
 <template>
 	<Teleport to="body">
 		<Transition name="dialog-fade">
-			<div v-if="visible" class="dialog-overlay" @click.self="handleOverlayClick">
+			<div v-if="visible" class="dialog-overlay" >
 				<div class="dialog-box" :class="[typeClass, {dark: isDark}]">
 					<div class="dialog-header" :class="typeClass">
 						<span class="dialog-icon">{{ typeIcon }}</span>

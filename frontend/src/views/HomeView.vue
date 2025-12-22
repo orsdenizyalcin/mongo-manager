@@ -283,7 +283,7 @@
 		</template>
 
 		<!-- Create Database Modal -->
-		<div v-if="showCreateDbModal" class="modal-overlay" @click.self="closeCreateDbModal">
+		<div v-if="showCreateDbModal" class="modal-overlay" >
 			<div class="mongomanager-modal" style="width: 450px">
 				<div class="modal-title">{{ $t('createDatabase') }}</div>
 

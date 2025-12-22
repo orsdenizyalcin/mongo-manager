@@ -61,7 +61,7 @@
 		</div>
 
 		<!-- Create Index Modal -->
-		<div v-if="showCreateModal" class="modal-overlay" @click.self="closeModal">
+		<div v-if="showCreateModal" class="modal-overlay" >
 			<div class="modal-content">
 				<div class="modal-header">
 					<h3>Create Index</h3>

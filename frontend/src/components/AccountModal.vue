@@ -1,5 +1,5 @@
 <template>
-	<div class="modal-overlay" @click.self="$emit('close')">
+	<div class="modal-overlay" >
 		<div class="account-modal">
 			<div class="modal-header">
 				<h3>{{ $t('profile') || 'Profile' }}</h3>

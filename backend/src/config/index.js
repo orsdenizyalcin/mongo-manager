@@ -14,7 +14,9 @@ if (!existsSync(dataDir)) {
 
 // Config object
 const config = {
-	port: process.env.PORT || 3000,
+    appName: 'Mongo Manager',
+    serverIP: process.env.SERVER_IP || '0.0.0.0',
+	port: process.env.PORT || 3001,
 	nodeEnv: process.env.NODE_ENV || 'development',
 	dataDir,
 	connectionsFile: resolve(dataDir, 'connections.json'),
