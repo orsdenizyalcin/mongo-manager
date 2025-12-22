@@ -34,7 +34,7 @@
 							<path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
 							<circle cx="12" cy="7" r="4" />
 						</svg>
-						<input id="username" name="username" v-model="username" type="text" placeholder="Enter your username" required autocomplete="username" />
+						<input id="username" name="username" v-model="username" type="text" :placeholder="$t('usernamePlaceholder')" required autocomplete="username" />
 					</div>
 				</div>
 
@@ -50,7 +50,7 @@
 							name="password"
 							v-model="password"
 							:type="showPassword ? 'text' : 'password'"
-							placeholder="Enter your password"
+							:placeholder="$t('passwordPlaceholder')"
 							required
 							autocomplete="current-password"
 						/>
